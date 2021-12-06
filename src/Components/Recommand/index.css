@@ -1,0 +1,78 @@
+.recom {
+    height: 163px;
+    margin-top: 12px;
+}
+
+.recom_hd {
+    float: left;
+    width: 205px;
+    height: 163px;
+    perspective: 600px;
+}
+
+.hot_box {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    transition: all 0.6s;
+    transform-style: preserve-3d;
+}
+
+.hot_box:hover {
+    transform: rotateY(-180deg);
+}
+
+.front {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    line-height: 150px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    color: orange;
+    background-color: peachpuff;
+    line-height: 150px;
+    text-align: center;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+
+.recom_bd {
+    float: left;
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+
+/* add the right line oof the img and make the last one empty */
+
+.recom_bd ul li:nth-child(-n+3) ::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: orange;
+}

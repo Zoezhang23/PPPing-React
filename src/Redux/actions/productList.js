@@ -1,0 +1,10 @@
+import { ADD_CART, SELECT_ALL, ADD_PRODUCT, DECRE_PRODUCT, DECRE_PRODUCTS, CLEARALL, CHECk, UPDATELIST, DELETMUL } from "../const"
+export const productList = (data) => ({ type: ADD_CART, data })
+export const selectAll = (data) => ({ type: SELECT_ALL, data })
+export const incre = (data) => ({ type: ADD_PRODUCT, data })
+export const decre = (data) => ({ type: DECRE_PRODUCT, data })
+export const delectOneType = (data) => ({ type: DECRE_PRODUCTS, data })
+export const clearAll = (data) => ({ type: CLEARALL, data })
+export const toggleCheck = (data) => ({ type: CHECk, data })
+export const updateList = (data) => ({ type: UPDATELIST, data })
+export const deleteAll = (data) => ({ type: DELETMUL, data })

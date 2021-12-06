@@ -1,0 +1,76 @@
+@import "../../basicConfig.scss";
+
+.homeHeader {
+    position: relative;
+    height: 105px;
+
+    .logo {
+        position: absolute;
+        top: 25px;
+        width: 171px;
+        height: 61px;
+
+        a {
+            display: block;
+            width: 171px;
+            height: 61px;
+            background: url(../../images/logo.png) no-repeat;
+            font-size: 16px;
+            margin-top: -10px;
+        }
+    }
+
+    .search {
+        position: absolute;
+        left: 346px;
+        top: 25px;
+        width: 538px;
+        height: 36px;
+
+    }
+
+    .hotwords {
+        position: absolute;
+        left: 346px;
+        top: 66px;
+
+        a {
+            margin: 0 10px;
+
+            &:first-child {
+                color: $color;
+            }
+        }
+    }
+
+    .shoppingCart {
+        position: absolute;
+        top: 25px;
+        right: 60px;
+        width: 140px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        border: 1px solid #dfdfdf;
+        background-color: $color;
+        border-radius: 5px;
+        font-size: 14px;
+
+        a {
+            color: #fff
+        }
+
+        .count {
+            position: absolute;
+            top: -5px;
+            left: 85px;
+            height: 14px;
+            line-height: 14px;
+            padding: 0 5px;
+            color: #fff;
+            background-color: #0e75a2;
+            border-radius: 7px 7px 7px 0;
+        }
+    }
+
+}

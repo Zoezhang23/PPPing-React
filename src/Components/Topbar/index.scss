@@ -1,0 +1,22 @@
+/* set main page width */
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+
+    ul li {
+        float: left;
+    }
+
+    .fl {
+        float: left;
+    }
+
+    .fr {
+        float: right;
+
+        ul li {
+            margin-left: 20px;
+        }
+    }
+}

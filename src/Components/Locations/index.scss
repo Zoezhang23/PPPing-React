@@ -1,0 +1,88 @@
+// .locationHeader {
+//     height: 84px;
+//     border-bottom: 2px solid orange;
+// }
+
+.logo {
+   position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+        a {
+        display: block;
+        width: 171px;
+        height: 61px;
+        background: url(../../images/logo.png) no-repeat;
+        font-size: 0;
+        margin-top: 10px;
+        }
+}
+
+.map {
+    position: relative;
+    width: 747px;
+    height: 616px;
+    background: url(../../images/map.png) no-repeat;
+    background-color: black;
+    margin: 20px auto;
+        .city {
+            position: absolute;
+            top: 227px;
+            right: 193px;
+            .dot {
+                width: 8px;
+                height: 8px;
+                background-color:#fff;
+                border-radius: 50%;
+            }
+            .wave1 {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 8px;
+              height: 8px;
+              box-shadow: 0px 0px 12px #fff;
+              border-radius: 50%;
+              animation: move 1.2s linear infinite;
+            }
+            .wave2 {
+                @extend .wave1;
+                animation-delay: 0.4s;
+            }
+            .wave3 {
+                @extend .wave1;
+                animation-delay: 0.7s;
+            }
+        }
+        .tb {
+            position: absolute;
+            top: 501px;
+            right: 77px;
+        }
+        .gz {
+            position: absolute;
+            top: 542px;
+            right: 190px;
+        }
+        @keyframes move {
+            0% {}
+            70% {
+                width: 40px;
+                height: 40px;
+                opacity: 1;
+            }
+            100% {
+                width: 70px;
+                height: 70px;
+                opacity: 0;
+            }
+        }
+
+}
+
+
+
+
+
+
